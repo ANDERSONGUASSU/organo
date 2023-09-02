@@ -1,8 +1,11 @@
-export const CampoTexto = () => {
+import './CampoTexto.css'
+export const CampoTexto = (props) => {
+    const placeholderModificada = `${props.placeholder}...`
+    
     return (
-        <div>
-            <label htmlFor=""> Nome</label>
-            <input type="text" />
+        <div className="campo-texto">
+            <label htmlFor="">{props.label}</label>
+            <input type="text" placeholder={placeholderModificada} />
         </div>
     )
 }
