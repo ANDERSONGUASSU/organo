@@ -1,3 +1,4 @@
+import { Botao } from '../Botoes/Botao'
 import CampoTexto from '../CampoTexto'
 import { ListaSuspensa } from '../ListaSuspensa/ListaSuspensa'
 
@@ -21,6 +22,9 @@ export const Formulario = () => {
                 <CampoTexto label="Cargo" placeholder="Digite seu cargo" />
                 <CampoTexto label="Imagem" placeholder="Digite o enderço da imagem" />
                 <ListaSuspensa label="Time"itens={times}/>
+                <Botao> 
+                    Criar Card
+                </Botao>
                 
             </form>
         </section>
