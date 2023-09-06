@@ -1,6 +1,6 @@
 import './Colaborador.css'
 
-export const Colaborador = ({nome, imagem, cargo, corPrimaria}) => {
+export const Colaborador = ({ nome, imagem, cargo, corPrimaria }) => {
     const css = { backgroundColor: corPrimaria };
     return (
         <div className="colaborador">
